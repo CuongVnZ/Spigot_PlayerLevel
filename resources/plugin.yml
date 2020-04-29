@@ -1,0 +1,6 @@
+name: ExamplePlugin
+main: net.cuongvnz.example.ExamplePlugin
+version: ${project.version}
+description: ExamplePlugin
+author: CuongVnZ
+commands:

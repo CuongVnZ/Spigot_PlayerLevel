@@ -1,0 +1,45 @@
+#Prefix khi gửi thông báo
+PREFIX: '&c&l[CC GI DO]'
+GAIN_EXP:
+  #setting số lượng level nhận vào khi giết mob
+  VANILLA_MOB:
+    ZOMBIE: 0.1
+    SHEEP: 0.1
+  #setting số lượng level nhận vào khi giết mob mm
+  MYTHICMOBS:
+    Tên mob 1: 0.5
+    Tên mob 2: 0.5
+  #setting số lượng level nhận vào khi farm nông sản
+  FARM:
+    pumking: 1
+    melon: 1
+  #setting số lượng level nhận vào khi mine
+  MINE:
+    DIAMOND_ORE: 1
+    GOLD_ORE: 1
+#giới hạn cần để lên của từng level
+LEVELING:
+  #không viết có nghĩa là giữ nguyên limit này ở 3 và 4
+  2: 20( cần 20 điểm lv để lên cấp 2)
+  5: 50
+LEVEL_UP_COMMAND: #mỗi lần lên 1 mốc lv được xác định sẽ thực hiện command
+  2:
+    - 'msg {player} chúc mừng bạn đã lên cấp 2'
+    - 'eco give {player} 10'
+#Hiển thị format level tương ứng với perm tương ứng (khi player chat)
+CHAT_FORMAT:
+  HE_HOA:
+    PERM: he.hoa.perm
+    FORMAT: '&4Hoa {level} '
+  HE_THUY:
+    PERM: he.thuy.perm
+    FORMAT: '&bThuy {level} '
+MESSAGE:
+  No-perm: &c Bạn không có quyền dung lệnh này
+  Reload-success: đã reload lại file
+  Commands:
+    - /playerlevel set {player} {level}
+    - /playerlevel give {player} {levelpoints}
+  PlaceHolder:
+    LEVEL: {level}
+    {levelpoints}/{levellimit}
