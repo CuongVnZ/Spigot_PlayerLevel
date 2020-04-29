@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TemplatePlugin.iml" filepath="$PROJECT_DIR$/TemplatePlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PlayerLevel.iml" filepath="$PROJECT_DIR$/PlayerLevel.iml" />
     </modules>
   </component>
 </project>
