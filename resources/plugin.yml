@@ -1,6 +1,6 @@
-name: ExamplePlugin
-main: net.cuongvnz.example.ExamplePlugin
+name: PlayerLevel
+main: net.cuongvnz.business2.PlayerLevel
 version: ${project.version}
-description: ExamplePlugin
+description: PlayerLevel
 author: CuongVnZ
 commands:

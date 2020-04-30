@@ -27,7 +27,9 @@ public class PlayerLevel extends JavaPlugin{
         new CommandManager(this);
         new PlayerLevelManager(this);
         new MenuManager(this);
-        
+
+        Settings.reload();
+        plugin.getLogger().info("PlayerLevel by ChinnSu.");
     }
     
     @Override

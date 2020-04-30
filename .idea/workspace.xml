@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75b94a62-e5b7-4419-bdbb-b1722c574508" name="Default Changelist" comment="" />
+    <list default="true" id="75b94a62-e5b7-4419-bdbb-b1722c574508" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/MythicMobs_4_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/net/cuongvnz/business2/Settings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/net/cuongvnz/business2/playerlevel/ChatPrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlayerLevel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerLevel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/cuongvnz/business2/PlayerLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/cuongvnz/business2/PlayerLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/cuongvnz/business2/commands/general/PlayerLevelCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/cuongvnz/business2/commands/general/PlayerLevelCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/cuongvnz/business2/playerlevel/PlayerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/cuongvnz/business2/playerlevel/PlayerData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/cuongvnz/business2/playerlevel/PlayerLevelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/cuongvnz/business2/playerlevel/PlayerLevelManager.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,16 +27,24 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1aXY05lbMs8XxvhtFbLUOSoHMDU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/net/cuongvnz/business2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../McFamRPG" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -44,41 +65,75 @@
       <workItem from="1586967408976" duration="1783000" />
       <workItem from="1588040203154" duration="1097000" />
       <workItem from="1588105314748" duration="2451000" />
+      <workItem from="1588157773235" duration="321000" />
+      <workItem from="1588249497856" duration="6704000" />
     </task>
+    <task id="LOCAL-00001" summary="123">
+      <created>1588158037232</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588158037232</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="123" />
+    <option name="LAST_COMMIT_MESSAGE" value="123" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="42" key="#Inspections" timestamp="1586884093522">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="42" key="#Inspections/0.0.1366.768@0.0.1366.768" timestamp="1586884093522" />
+    <state x="163" y="0" key="#Project_Structure" timestamp="1588252598956">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="163" y="0" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1588252598956" />
     <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586883605014">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1586883605014" />
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1586883776209">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1588158035516">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1586883776209" />
-    <state width="1286" height="161" key="GridCell.Tab.0.bottom" timestamp="1588041915500">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588158035516" />
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1588252235674">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588041915500" />
-    <state width="1286" height="161" key="GridCell.Tab.0.center" timestamp="1588041915500">
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1588252235674" />
+    <state x="532" y="282" key="Github.ShareDialog" timestamp="1588157846210">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1588041915500" />
-    <state width="1286" height="161" key="GridCell.Tab.0.left" timestamp="1588041915500">
+    <state x="532" y="282" key="Github.ShareDialog/0.0.1366.768@0.0.1366.768" timestamp="1588157846210" />
+    <state x="438" y="89" key="Github.UntrackedFilesDialog" timestamp="1588157864008">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1588041915500" />
-    <state width="1286" height="161" key="GridCell.Tab.0.right" timestamp="1588041915500">
+    <state x="438" y="89" key="Github.UntrackedFilesDialog/0.0.1366.768@0.0.1366.768" timestamp="1588157864008" />
+    <state width="1286" height="162" key="GridCell.Tab.0.bottom" timestamp="1588254636236">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1588041915500" />
+    <state width="1286" height="162" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588254636236" />
+    <state width="1286" height="162" key="GridCell.Tab.0.center" timestamp="1588254636236">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1286" height="162" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1588254636236" />
+    <state width="1286" height="162" key="GridCell.Tab.0.left" timestamp="1588254636235">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1286" height="162" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1588254636235" />
+    <state width="1286" height="162" key="GridCell.Tab.0.right" timestamp="1588254636236">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1286" height="162" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1588254636236" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1588158039376">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1588158039376" />
     <state x="380" y="116" width="607" height="582" key="find.popup" timestamp="1588040681217">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

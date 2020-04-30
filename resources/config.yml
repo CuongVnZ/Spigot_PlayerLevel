@@ -1,5 +1,4 @@
 #Prefix khi gửi thông báo
-PREFIX: '&c&l[CC GI DO]'
 GAIN_EXP:
   #setting số lượng level nhận vào khi giết mob
   VANILLA_MOB:
@@ -14,32 +13,41 @@ GAIN_EXP:
     pumking: 1
     melon: 1
   #setting số lượng level nhận vào khi mine
-  MINE:
+  BREAK:
     DIAMOND_ORE: 1
     GOLD_ORE: 1
+    PUMPKING: 1
+    MELON: 1
 #giới hạn cần để lên của từng level
-LEVELING:
+SETTINGS:
+  MAX_LEVEL: 50
+  LEVEL_SCALE: 10*{level}
   #không viết có nghĩa là giữ nguyên limit này ở 3 và 4
-  2: 20( cần 20 điểm lv để lên cấp 2)
-  5: 50
-LEVEL_UP_COMMAND: #mỗi lần lên 1 mốc lv được xác định sẽ thực hiện command
-  2:
-    - 'msg {player} chúc mừng bạn đã lên cấp 2'
-    - 'eco give {player} 10'
+  LEVEL_SPECIFIC:
+    '2': 20
+    '5': 50
+  #mỗi lần lên 1 mốc lv được xác định sẽ thực hiện command
+  LEVEL_UP_COMMAND:
+    2:
+      - 'msg {player} chúc mừng bạn đã lên cấp 2'
+      - 'eco give {player} 10'
 #Hiển thị format level tương ứng với perm tương ứng (khi player chat)
 CHAT_FORMAT:
-  HE_HOA:
-    PERM: he.hoa.perm
-    FORMAT: '&4Hoa {level} '
-  HE_THUY:
-    PERM: he.thuy.perm
-    FORMAT: '&bThuy {level} '
+  PREFIXES:
+    HE_HOA:
+      PERM: 'he.hoa.perm'
+      FORMAT: '§4Hoa {level} '
+    HE_THUY:
+      PERM: 'he.thuy.perm'
+      FORMAT: '§bThuy {level} '
+  PLACEHOLDERS:
+    LEVEL: '{level} '
+    LEVEL_POINTS: '{levelpoints}'
+    LEVEL_LIMIT: '{levellimit}'
 MESSAGE:
-  No-perm: &c Bạn không có quyền dung lệnh này
-  Reload-success: đã reload lại file
+  PREFIX: '§c§l[PlayerLevel]'
+  No-perm: '§cBạn không có quyền dung lệnh này'
+  Reload-success: 'Đã reload lại file'
   Commands:
-    - /playerlevel set {player} {level}
-    - /playerlevel give {player} {levelpoints}
-  PlaceHolder:
-    LEVEL: {level}
-    {levelpoints}/{levellimit}
+    - 'playerlevel set {player} {level}'
+    - 'playerlevel give {player} {levelpoints}'

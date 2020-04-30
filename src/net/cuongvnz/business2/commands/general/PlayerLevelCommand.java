@@ -1,5 +1,8 @@
 package net.cuongvnz.business2.commands.general;
 
+import net.cuongvnz.business2.playerlevel.PlayerData;
+import net.cuongvnz.business2.playerlevel.PlayerLevelManager;
+import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
@@ -13,7 +16,6 @@ public class PlayerLevelCommand extends AbstractCommand {
 
     @Override
     public void execute(CommandSender sender, String[] args) {
-        sender.sendMessage("Hello motherfucker");
     }
     
     @Override
@@ -23,10 +25,18 @@ public class PlayerLevelCommand extends AbstractCommand {
 	@Override
 	public void executePlayer(Player p, String[] args) {
         try{
+            Player target = Bukkit.getPlayer(args[1]);
+            PlayerData pd = PlayerLevelManager.profiles.get(p);
             switch(args[0]){
-                case "setlevel":
+                case "set":
+                    int level = Integer.parseInt(args[2]);
+                    pd.level = level;
+                    p.sendMessage("Done");
                     break;
-                case "2":
+                case "give":
+                    double exp = Double.parseDouble(args[2]);
+                    pd.gainExp(exp);
+                    p.sendMessage("Done");
                     break;
             }
         }catch(Exception e){
