@@ -17,9 +17,19 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="MythicMobs-4.9.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.bukkit:craftbukkit:1.12.2-R0.1-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
-    <orderEntry type="library" name="MythicMobs-4.9.0" level="project" />
+    <orderEntry type="module-library">
+      <library name="Maven: net.elseland.xikage:MythicMobs:4.9.0">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/MythicMobs-4.9.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="PROVIDED" name="Maven: me.clip:placeholderapi:2.10.3" level="project" />
   </component>
 </module>

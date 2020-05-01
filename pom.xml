@@ -55,11 +55,21 @@
 			<scope>system</scope>
 			<systemPath>C:/Users/edgcu/Downloads/MythicMobs-4.9.0.jar</systemPath>
 		</dependency>
+		<dependency>
+			<groupId>me.clip</groupId>
+			<artifactId>placeholderapi</artifactId>
+			<version>2.10.3</version>
+			<scope>provided</scope>
+		</dependency>
     </dependencies>
 	<repositories>
 		<repository>
 			<id>elmakers-repo</id>
 			<url>http://maven.elmakers.com/repository/</url>
+		</repository>
+		<repository>
+			<id>placeholderapi</id>
+			<url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
 		</repository>
 	</repositories>
 	<artifactId>PlayerLevel</artifactId>

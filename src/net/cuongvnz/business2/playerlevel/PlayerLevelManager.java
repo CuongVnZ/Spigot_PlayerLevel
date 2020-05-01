@@ -1,21 +1,29 @@
 package net.cuongvnz.business2.playerlevel;
 
+import io.lumine.xikage.mythicmobs.api.bukkit.BukkitAPIHelper;
 import net.cuongvnz.business2.AbstractManager;
 import net.cuongvnz.business2.Settings;
+import net.cuongvnz.business2.playerlevel.papi.LevelHolder;
 import org.bukkit.Bukkit;
+import org.bukkit.block.Block;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 
 import net.cuongvnz.business2.PlayerLevel;
+import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerLoginEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class PlayerLevelManager extends AbstractManager {
@@ -29,6 +37,9 @@ public class PlayerLevelManager extends AbstractManager {
 	@Override
 	public void initialize() {
 		reload();
+		if(Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null){
+			new LevelHolder(plugin).register();
+		}
 	}
 
 	public static void reload(){
@@ -121,7 +132,46 @@ public class PlayerLevelManager extends AbstractManager {
 		}
 	}
 
-	public String reFormat(String s, Player p){
+	@EventHandler
+	public void onEntityDeath(EntityDeathEvent event){
+		Entity e = event.getEntity();
+		if(e.getLastDamageCause() instanceof EntityDamageByEntityEvent){
+			EntityDamageByEntityEvent cause = (EntityDamageByEntityEvent) e.getLastDamageCause();
+			if(cause.getDamager() instanceof Player){
+				Player p = (Player) cause.getDamager();
+				PlayerData pd = profiles.get(p);
+				for(EntityExp ee : Settings.ees){
+					if(ee.isMyThicMob){
+						BukkitAPIHelper api = new BukkitAPIHelper();
+						if(api.isMythicMob(e)
+								&& api.getMythicMobInstance(e).getType()
+								.getInternalName().equalsIgnoreCase(ee.type)){
+							pd.gainExp(ee.exp);
+						}
+					}else{
+						if(e.getType().toString().equalsIgnoreCase(ee.type)){
+							pd.gainExp(ee.exp);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@EventHandler
+	public void onBreak(BlockBreakEvent event){
+		Block b = event.getBlock();
+		Player p = event.getPlayer();
+		PlayerData pd = profiles.get(p);
+		if(pd==null) return;
+		for(BlockExp be : Settings.bes){
+			if(b.getType().toString().equalsIgnoreCase(be.type)){
+				pd.gainExp(be.exp);
+			}
+		}
+	}
+
+	public static String reFormat(String s, Player p){
 		PlayerData pd = profiles.get(p);
 		if(pd == null) return s;
 		s = s.replace("{player}", p.getName());
@@ -134,7 +184,7 @@ public class PlayerLevelManager extends AbstractManager {
 
 	public static double getLimitExp(Player p){
 		PlayerData pd = profiles.get(p);
-		if(pd==null) return 9999;
+		if(pd==null) return 9999999;
 		return Settings.leveling.get(pd.level);
 	}
 }

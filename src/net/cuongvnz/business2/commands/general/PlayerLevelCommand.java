@@ -1,5 +1,6 @@
 package net.cuongvnz.business2.commands.general;
 
+import net.cuongvnz.business2.Settings;
 import net.cuongvnz.business2.playerlevel.PlayerData;
 import net.cuongvnz.business2.playerlevel.PlayerLevelManager;
 import org.bukkit.Bukkit;
@@ -31,12 +32,12 @@ public class PlayerLevelCommand extends AbstractCommand {
                 case "set":
                     int level = Integer.parseInt(args[2]);
                     pd.level = level;
-                    p.sendMessage("Done");
+                    p.sendMessage(Settings.MSG_PREFIX + "Done");
                     break;
                 case "give":
                     double exp = Double.parseDouble(args[2]);
                     pd.gainExp(exp);
-                    p.sendMessage("Done");
+                    p.sendMessage(Settings.MSG_PREFIX + "Done");
                     break;
             }
         }catch(Exception e){

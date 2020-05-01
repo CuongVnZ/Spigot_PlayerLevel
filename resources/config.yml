@@ -1,53 +1,54 @@
-#Prefix khi gửi thông báo
 GAIN_EXP:
   #setting số lượng level nhận vào khi giết mob
   VANILLA_MOB:
     ZOMBIE: 0.1
     SHEEP: 0.1
+    CHICKEN: 0.5
   #setting số lượng level nhận vào khi giết mob mm
-  MYTHICMOBS:
-    Tên mob 1: 0.5
+  MYTHIC_MOB:
+    SkeletalKnight: 50.5
     Tên mob 2: 0.5
-  #setting số lượng level nhận vào khi farm nông sản
-  FARM:
-    pumking: 1
-    melon: 1
-  #setting số lượng level nhận vào khi mine
+  #setting số lượng level nhận vào khi mine & farm
   BREAK:
-    DIAMOND_ORE: 1
-    GOLD_ORE: 1
-    PUMPKING: 1
-    MELON: 1
+    DIAMOND_ORE: 1.0
+    GOLD_ORE: 1.0
+    PUMPKIN: 1.0
+    MELON_BLOCK: 1.0
 #giới hạn cần để lên của từng level
 SETTINGS:
-  MAX_LEVEL: 50
+  MAX_LEVEL: 100
   LEVEL_SCALE: 10*{level}
   #không viết có nghĩa là giữ nguyên limit này ở 3 và 4
   LEVEL_SPECIFIC:
     '2': 20
     '5': 50
-  #mỗi lần lên 1 mốc lv được xác định sẽ thực hiện command
+  #Thực hiện command mỗi lần lên lv
   LEVEL_UP_COMMAND:
-    2:
-      - 'msg {player} chúc mừng bạn đã lên cấp 2'
-      - 'eco give {player} 10'
+    - 'token give %player% 100'
+  #Thực hiện command khi lên các mốc level xác định
+  LEVEL_UP_COMMAND_SPECIFIC:
+    '2':
+      - 'msg %player% chúc mừng bạn đã lên cấp 2'
+      - 'eco give %player% 10'
+  PAPI:
+    #%playerlevel_level%
+    LEVEL: 'level'
+    #%playerlevel_levelpoints%
+    LEVEL_POINTS: 'levelpoints'
+    #%playerlevel_levellimit%
+    LEVEL_LIMIT: 'levellimit'
 #Hiển thị format level tương ứng với perm tương ứng (khi player chat)
 CHAT_FORMAT:
   PREFIXES:
     HE_HOA:
       PERM: 'he.hoa.perm'
-      FORMAT: '§4Hoa {level} '
+      FORMAT: '§4Hoa {level} §7{player} >>'
     HE_THUY:
       PERM: 'he.thuy.perm'
-      FORMAT: '§bThuy {level} '
-  PLACEHOLDERS:
-    LEVEL: '{level} '
-    LEVEL_POINTS: '{levelpoints}'
-    LEVEL_LIMIT: '{levellimit}'
-MESSAGE:
+      FORMAT: '§bThuy {level} §7{player} >>'
+MESSAGES:
+  #Prefix khi gửi thông báo
   PREFIX: '§c§l[PlayerLevel]'
-  No-perm: '§cBạn không có quyền dung lệnh này'
-  Reload-success: 'Đã reload lại file'
-  Commands:
-    - 'playerlevel set {player} {level}'
-    - 'playerlevel give {player} {levelpoints}'
+  LEVEL_UP: '§cLevel up %old_level% -> %new_level%'
+  GAIN_EXP: 'Bạn đã nhận được %amount% exp'
+  RELOADED: 'Đã reload lại file'

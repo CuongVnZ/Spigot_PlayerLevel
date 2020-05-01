@@ -3,4 +3,4 @@ main: net.cuongvnz.business2.PlayerLevel
 version: ${project.version}
 description: PlayerLevel
 author: CuongVnZ
-commands:
+depend: [PlaceholderAPI, MythicMobs]

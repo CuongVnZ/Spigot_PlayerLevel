@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b94a62-e5b7-4419-bdbb-b1722c574508" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/MythicMobs_4_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/net/cuongvnz/business2/Settings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/net/cuongvnz/business2/playerlevel/ChatPrefix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__me_clip_placeholderapi_2_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/net/cuongvnz/business2/playerlevel/BlockExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/net/cuongvnz/business2/playerlevel/EntityExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/net/cuongvnz/business2/playerlevel/papi/LevelHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlayerLevel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerLevel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/cuongvnz/business2/PlayerLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/cuongvnz/business2/PlayerLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/cuongvnz/business2/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/cuongvnz/business2/Settings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/cuongvnz/business2/commands/general/PlayerLevelCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/cuongvnz/business2/commands/general/PlayerLevelCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/cuongvnz/business2/playerlevel/PlayerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/cuongvnz/business2/playerlevel/PlayerData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/cuongvnz/business2/playerlevel/PlayerLevelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/cuongvnz/business2/playerlevel/PlayerLevelManager.java" afterDir="false" />
@@ -66,7 +69,9 @@
       <workItem from="1588040203154" duration="1097000" />
       <workItem from="1588105314748" duration="2451000" />
       <workItem from="1588157773235" duration="321000" />
-      <workItem from="1588249497856" duration="6704000" />
+      <workItem from="1588249497856" duration="7350000" />
+      <workItem from="1588275937294" duration="6096000" />
+      <workItem from="1588300893064" duration="1244000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1588158037232</created>
@@ -75,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588158037232</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update leveling system &amp; config">
+      <created>1588256735648</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588256735648</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,7 +95,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="123" />
-    <option name="LAST_COMMIT_MESSAGE" value="123" />
+    <MESSAGE value="Update leveling system &amp; config" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update leveling system &amp; config" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="42" key="#Inspections" timestamp="1586884093522">
@@ -94,14 +107,18 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="163" y="0" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1588252598956" />
+    <state x="488" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1588279906963">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="488" y="90" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1588279906963" />
     <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586883605014">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1586883605014" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1588158035516">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1588256734107">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588158035516" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588256734107" />
     <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1588252235674">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -114,29 +131,37 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="438" y="89" key="Github.UntrackedFilesDialog/0.0.1366.768@0.0.1366.768" timestamp="1588157864008" />
-    <state width="1286" height="162" key="GridCell.Tab.0.bottom" timestamp="1588254636236">
+    <state width="1286" height="157" key="GridCell.Tab.0.bottom" timestamp="1588290586443">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1286" height="162" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588254636236" />
-    <state width="1286" height="162" key="GridCell.Tab.0.center" timestamp="1588254636236">
+    <state width="1286" height="157" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588290586443" />
+    <state width="1286" height="157" key="GridCell.Tab.0.center" timestamp="1588290586443">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1286" height="162" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1588254636236" />
-    <state width="1286" height="162" key="GridCell.Tab.0.left" timestamp="1588254636235">
+    <state width="1286" height="157" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1588290586443" />
+    <state width="1286" height="157" key="GridCell.Tab.0.left" timestamp="1588290586442">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1286" height="162" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1588254636235" />
-    <state width="1286" height="162" key="GridCell.Tab.0.right" timestamp="1588254636236">
+    <state width="1286" height="157" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1588290586442" />
+    <state width="1286" height="157" key="GridCell.Tab.0.right" timestamp="1588290586443">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1286" height="162" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1588254636236" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1588158039376">
+    <state width="1286" height="157" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1588290586443" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1588256747945">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1588158039376" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1588256747945" />
     <state x="380" y="116" width="607" height="582" key="find.popup" timestamp="1588040681217">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="380" y="116" width="607" height="582" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1588040681217" />
+    <state x="339" y="174" key="run.anything.popup" timestamp="1588280974604">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="174" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1588280974604" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1588301776178">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1588301776178" />
   </component>
 </project>
