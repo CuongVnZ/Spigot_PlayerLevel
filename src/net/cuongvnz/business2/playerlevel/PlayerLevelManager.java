@@ -127,7 +127,7 @@ public class PlayerLevelManager extends AbstractManager {
 		for(ChatPrefix prefix : Settings.prefixes){
 			if(p.hasPermission(prefix.permission)){
 				String format = reFormat(prefix.format, p);
-				event.setFormat(format + event.getMessage());
+				event.setFormat(format+event.getFormat());
 			}
 		}
 	}

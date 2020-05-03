@@ -24,12 +24,12 @@ SETTINGS:
     '5': 50
   #Thực hiện command mỗi lần lên lv
   LEVEL_UP_COMMAND:
-    - 'token give %player% 100'
+    - 'token give {player} 100'
   #Thực hiện command khi lên các mốc level xác định
   LEVEL_UP_COMMAND_SPECIFIC:
     '2':
-      - 'msg %player% chúc mừng bạn đã lên cấp 2'
-      - 'eco give %player% 10'
+      - 'msg {player} chúc mừng bạn đã lên cấp 2'
+      - 'eco give {player} 10'
   PAPI:
     #%playerlevel_level%
     LEVEL: 'level'
@@ -42,10 +42,10 @@ CHAT_FORMAT:
   PREFIXES:
     HE_HOA:
       PERM: 'he.hoa.perm'
-      FORMAT: '§4Hoa {level} §7{player} >>'
+      FORMAT: '§4Hoa {level} '
     HE_THUY:
       PERM: 'he.thuy.perm'
-      FORMAT: '§bThuy {level} §7{player} >>'
+      FORMAT: '§bThuy {level} '
 MESSAGES:
   #Prefix khi gửi thông báo
   PREFIX: '§c§l[PlayerLevel]'

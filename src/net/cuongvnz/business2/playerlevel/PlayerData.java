@@ -19,7 +19,7 @@ public class PlayerData {
         exp+=amount;
         String gainExp = Settings.MSG_GAIN_EXP;
         gainExp = gainExp.replace("%amount%", amount+"");
-        p.sendMessage(gainExp);
+        //p.sendMessage(gainExp);
         double limit = PlayerLevelManager.getLimitExp(p);
         if(exp >= limit){
             exp = exp-limit;

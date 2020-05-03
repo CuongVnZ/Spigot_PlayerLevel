@@ -34,6 +34,7 @@ public class Settings {
     public static String MSG_PREFIX = "§c§l[PlayerLevel]";
     public static String MSG_LEVEL_UP = "§cLevel up %old_level% -> %new_level%";
     public static String MSG_GAIN_EXP = "Bạn đã nhận được %amount% exp";
+    public static String MSG_RELOADED = "Đã reload lại file";
 
     public static void reload(){
         PlayerLevel plugin = PlayerLevel.plugin;
